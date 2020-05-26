@@ -7,7 +7,8 @@
 .screen {
 	position: relative;
 	width: 325px;
-	height: 700px;
+	height: 500px;
 	border-radius: 25px;
 	background-color: green;
 }
+
