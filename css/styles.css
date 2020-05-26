@@ -3,3 +3,11 @@
 	background-size: cover;
 	padding: 40px 40px 40px 40px;
 }
+
+.screen {
+	position: relative;
+	width: 325px;
+	height: 700px;
+	border-radius: 25px;
+	background-color: green;
+}
