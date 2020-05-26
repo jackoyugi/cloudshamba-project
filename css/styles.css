@@ -3,3 +3,9 @@
 	background-size: cover;
 	padding: 40px 40px 40px 40px;
 }
+h1{
+	font-size: 40px;
+	color:red;
+	text-align: center;
+	font-family: monospace;
+}
