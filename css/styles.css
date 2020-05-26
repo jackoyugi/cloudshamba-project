@@ -12,3 +12,9 @@
 	background-color: green;
 }
 
+#formSunscribe {
+	width: 85%;
+	margin: 60px auto 0 auto;
+	padding: 25px;
+	border-radius: 8px;
+}
