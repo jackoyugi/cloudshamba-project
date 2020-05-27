@@ -1,8 +1,24 @@
+body, html {
+	height: 100%;
+}
+
 #con-1 {
 	background-image: url(../images/shamba.jpg);
 	background: cover;
 	background-size: cover;
 	padding: 40px 40px 40px 40px;
+}
+
+#aside {
+	margin-top: 100px;
+	color: white;
+	text-align: center;
+}
+
+.box {
+	border: 2px solid white;
+	padding: 20px;
+	text-align: center;
 }
 
 .screen {
@@ -11,6 +27,7 @@
 	height: 600px;
 	border-radius: 25px;
 	background-color: green;
+	float: right;
 }
 
 .screen-title {
