@@ -4,9 +4,19 @@
 	padding: 40px 40px 40px 40px;
 }
 h1{
-	font-size: 40px;
+
 	color:red;
 	text-align: center;
-	font-family: monospace;
+	font-size: 60px;
+    font-family: 'Shadows Into Light', cursive;
 	padding: 0%;
+	font-weight: bold;
+}
+label{
+	font-weight: bold;
+	color: chocolate;
+}
+p{
+	color:blue;
+	font-weight: bold;
 }
