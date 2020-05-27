@@ -1,0 +1,66 @@
+    /* body
+=============================*/
+#landingPage{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	background-image: url(../img/shamba.jpg);
+	background-repeat: no-repeat;
+	background: cover;
+	padding: 25% 25% 25% 25%
+
+}
+#selectShamba {
+	color: rgb(240, 233, 230);
+	position:relative;
+
+}
+
+body {
+    background: linear-gradient(rgb(168, 163, 163) 0%, #222 100%);
+    height: 100vh;
+    color: white;
+}
+    /* form styeles
+=============================*/
+.form-control:focus {
+    background-color: rgba(255,255,255,.4);
+    color: rgb(133, 115, 115);
+  }
+
+.form-control {
+    background-color:transparent;
+    color: rgb(134, 127, 127);
+    border: 3px solid #555;
+	height: 60px !important;
+	width: 200%;
+  }
+    /* Error Styles
+=============================*/
+  
+  .error-border {
+	border-color: rgb(85, 43, 43);
+  }
+  .error {
+    color: rgb(241, 234, 234);
+	font-size: 20px;
+  }
+  .section {
+	  color: white;
+	  width: 50%
+	  
+	  
+  }
+  #no {
+	  color: rgb(5, 4, 4);
+	  font-size: xx-large;
+
+  }
+  #symptoms {
+	  width: 300%;
+	  color: black;
+	  font-size: xx-large;
+  }
+  #sex {
+	  font-size: large;
+  }
