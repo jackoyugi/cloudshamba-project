@@ -25,7 +25,7 @@
                         			<p class="error">Please insert your username</p>
                         			<label>Password</label><input type="text" class="form-control" placeholder="Please insert your password..." autocapitalize="off" autocorrect="off">
                         			<p class="error">Please insert your password</p>
-                        			<button type="submit" class="btn btn-success mt-4 w-100">Click Here to login</button>
+                        			<button type="submit" class="btn btn-success mt-4 w-100" formaction="welcome.html">Click Here to login</button>
                        			</div>
                        		</form>
                        		<p class="screen-footer">
@@ -35,61 +35,5 @@
                		</div>
             	</div>
         	</div>
-        </div>       
-                   <div class="form-group" id="selectShamba">
-                       <div class="form-group" id="select">
-                        <h3><label>Welcome</label></h3>
-                           <select class="form-control" id="welcome">
-                               <option value="select"></option>
-                               <option value="diagnosis">Diagnosis</option>
-                               <option value="farmAccessories">Farm Accessories</option>
-                            </select>
-                       </div>
-                       <div class="form-group" id="animalDetails">
-                        <h3><label>Species</label></h3>
-                            <select class="form-control" id="species">
-                                <option value="select"></option>
-                                <option value="avian">Avian</option>
-                                <option value="bovine">Bovine</option>
-                                <option value="porcine">Porcine</option>    
-                            </select>
-                       </div>
-                       <div class="form-group">
-                           <div class="form-check" id="sex">
-                            <input type="radio" name="one" class="form-check-input" value="" id="gender">
-                            <label for="male">Male</label>
-                            <br>
-                            <input type="radio" name="one" class="form-check-input" value="" id="gender">
-                            <label for="male">Female</label>
-                           </div>
-                       </div>
-                       <div class="form-group">
-                           <div class="">
-                               <label><textarea id="breed" class="form-control" name="breeds" placeholder="Enter the breed..."></textarea>Breed</label>
-                               <label><textarea id="age" class="form-control" name="age" placeholder="Enter the Age..."></textarea>Age</label>
-                               <label><textarea id="no" class="form-control" name="no" placeholder="Enter herd number..."></textarea>Herd No.</label>
-                               <label><textarea id="no" class="form-control" name="no" placeholder="Enter number sick..."></textarea>No. Sick</label>
-                               <label><textarea id="no" class="form-control" name="no" placeholder="Enter number dead..."></textarea>No.dead in 2 weeks</label>
-                               <label><textarea id="location" class="form-control" name="no" placeholder="Enter location..."></textarea>Enter location</label>
-                               <label><textarea id="symptoms" class="form-control" name="symptoms" placeholder="Enter clinical signs..."></textarea>Tell us clinical signs</label>
-                           </div>
-                       </div>
-                   </div>
-                   <div class="backup" id="videoPhotos">
-                       <p>Please upload photos and videos of the sick animal here!</p>
-                   </div>
-                   <button type="button" class="btn btn-block btn-sm btn-success mt-3" id="order">Submit</button>
-                   <div class="prescription" id="tentiveDiagnosis">
-                       <h3>This is the history of the sick animal and tentative diagnosis/treatment</h3>
-                       <ul></ul>
-                       <div class="treatment container">
-                           <h3 id="treatment"></h3>
-                       </div>
-                   </div>
-               </form>
-           </div>
-       </div>
-    </body>
-    <script src="js/jquery-3.5.1.min.js"></script>
-        <script src="js/scripts.js"></script>
-</html>
+        </div>
+
