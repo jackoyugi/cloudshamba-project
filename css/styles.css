@@ -8,9 +8,15 @@ body, html {
 	padding: 40px 40px 40px 40px;
 }
 
+#aside {
+	margin-top: 100px;
+	color: white;
+	text-align: center;
+}
+
 .box {
-	border: 2px solid black;
-	padding: 50px;
+	border: 2px solid white;
+	padding: 20px;
 	text-align: center;
 }
 
