@@ -92,7 +92,6 @@ body {
 	  color: black;
   }
 
-  }
-  #selectShamba, #select, #sex, .footer, .history, #notes, #submitForm, {
+  #select, {
 	  display: none;
   }

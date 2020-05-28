@@ -5,7 +5,7 @@ function Diagnosis() {
     this.species;
     this.sex;
     this.History =[];
-    this.notes;
+    this.video;
 }
 function History(breed, age, number, sick, dead, location) {
     this.breed;
@@ -15,10 +15,10 @@ function History(breed, age, number, sick, dead, location) {
     this.location;
 }
 Diagnosis.prototype.selected = function() {
-    return this.diagnosis + " " + this.farmAccessories;
+    return this.diagnosis + " ";
 }
 History.prototype.selected = function() {
-    return this.breed + " " + this.age;
+    return this.breed + " " + this.location;
 }
 
 
@@ -39,12 +39,16 @@ $(document).ready(function() {
         $('#sick').append("<li>" + inputtedSick + "</li>");
         $('#dead').append("<li>" + inputtedDead + "</li>");
         $('#location').append("<li>" + inputtedLocation + "</li>");
+
     });
 
 });
 
+<<<<<<< HEAD
 $(document).ready(function() {
     $("#upload").submit(function(event) {
         alert("Your file has been received");
     });
 });
+=======
+>>>>>>> 5a5fa190a51c2f00f19ca94ea137db27b15fe473
