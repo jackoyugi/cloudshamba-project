@@ -20,6 +20,8 @@ Diagnosis.prototype.selected = function() {
 History.prototype.selected = function() {
     return this.breed + " " + this.age;
 }
+
+
 //userInterface
 $(document).ready(function() {
     $("#submitForm").submit(function(event) {
@@ -39,4 +41,10 @@ $(document).ready(function() {
         $('#location').append("<li>" + inputtedLocation + "</li>");
     });
 
+});
+
+$(document).ready(function() {
+    $("#upload").submit(function(event) {
+        alert("Your file has been received");
+    });
 });
