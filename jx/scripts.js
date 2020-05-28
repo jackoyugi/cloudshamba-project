@@ -5,7 +5,7 @@ function Diagnosis() {
     this.species;
     this.sex;
     this.History =[];
-    this.notes;
+    this.video;
 }
 function History(breed, age, number, sick, dead, location) {
     this.breed;
@@ -15,22 +15,22 @@ function History(breed, age, number, sick, dead, location) {
     this.location;
 }
 Diagnosis.prototype.selected = function() {
-    return this.diagnosis + " " + this.farmAccessories;
+    return this.diagnosis + " ";
 }
 History.prototype.selected = function() {
-    return this.breed + " " + this.age;
+    return this.breed + " " + this.location;
 }
 //userInterface
 $(document).ready(function() {
-    $("#selectShamba").submit(function(event) {
+    $("#selectShamba").click(function(event) {
         event.preventDefault();
-        var Diagnosis = new Diagnosis();
-        $("#selectShamba").FadeIn();
-        $("#select form-group").hide();
+        $("#select").fadeIn();
+        $("#selectShamba").hide();
         $("button#submitForm").click(function() {
 
         });
-
+    
     });
 
 });
+
