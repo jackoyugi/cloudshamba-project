@@ -1,23 +1,63 @@
     /* body
 =============================*/
 #landingPage{
-	display: flex;
-    flex-direction: column;
-    align-items: center;
-	background-image: url(../img/shamba.jpg);
+	background-image: url(../img/shamba3.jpg);
 	background-repeat: no-repeat;
 	background: cover;
-	padding: 25% 25% 25% 25%
-
+  color: black;
 }
-#selectShamba {
-	color: rgb(240, 233, 230);
-	position:relative;
 
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav-right {
+  float: right;
+}
+
+
+.form-group {
+  margin-right: 40px;
+}
+
+#history {
+background-color: green;
+padding-top: 50px;
+padding-left: 50px;
+padding-bottom: 50px;
+}
+
+#history h2 {
+  text-align: center;
+}
+
+#summary {
+  background-color: black;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: white;
+}
+
+#selectShamba {
+	padding-top: 70px;
+  text-align: center;
+}
+
+#select #sex {
+  text-align: center;
 }
 
 body {
-    background: linear-gradient(rgb(168, 163, 163) 0%, #222 100%);
     height: 100vh;
     color: white;
 }
@@ -31,9 +71,7 @@ body {
 .form-control {
     background-color:transparent;
     color: rgb(134, 127, 127);
-    border: 3px solid #555;
-	height: 60px !important;
-	width: 200%;
+    border: solid black;
   }
     /* Error Styles
 =============================*/
@@ -41,28 +79,19 @@ body {
   .error-border {
 	border-color: rgb(85, 43, 43);
   }
-  .error {
-    color: rgb(241, 234, 234);
-	font-size: 20px;
-  }
+
   .history {
-	  color: white;
-	  width: 50%
-	  
-	  
+	  color: white; 
   }
+
   #no {
 	  color: rgb(5, 4, 4);
-	  font-size: xx-large;
 
   }
   #symptoms {
-	  width: 300%;
 	  color: black;
-	  font-size: xx-large;
   }
-  #sex {
-	  font-size: large;
+
   }
   #selectShamba, #select, #sex, .footer, .history, #notes, #submitForm, {
 	  display: none;

@@ -12,72 +12,81 @@
 </head>
     <body>
 	    <div class="container-fluid" id="landingPage"> 
+	    	<div class="topnav">
+			<a class="navbar-brand" href="welcome.html">
+				<img src="img/logo.png">
+			</a>
+			<div class="topnav-right">
+				<a href="#landingPage"><strong>HOME</strong></a>
+				<a href="#products"><strong>ABOUT US</strong></a>
+			</div>
             <div class="row">
-                <div class="col-md-6"> 
+                <div class="col"> 
                     <form id="">
-                        <div>
-                            <button type="submit" class="btn btn-success mt-4 w-100">Click Here to Start</button>
-                        </div>
-                    <div class="form-group" id="selectShamba">
-                        <h1><label>Welcome</label></h1>
-                            <select class="form-control" id="welcome">
+                    	<div class="form-group" id="selectShamba">
+                        <h1>Welcome</h1>
+                        <label><h3>How would you like us to assist you?:</h3></label>
+                            <select class="form-control" id="service" required>
                                 <option value="select"></option>
                                 <option value="diagnosis">Diagnosis</option>
                                 <option value="farmAccessories">Farm Accessories</option>
                             </select>
-                            <p class="error">Please select an option</p>
-                    </div>   
-                    <div class="form-group" id="select">
+                    	</div>   
+                    	<div class="form-group" id="select">
                             <div class="form-group" id="animalDetails">
                                 <h3><label>Species</label></h3>
-                                    <select class="form-control" id="species">
+                                    <select class="form-control" id="species" required>
                                         <option value="select"></option>
                                         <option value="avian">Avian</option>
                                         <option value="bovine">Bovine</option>
                                         <option value="porcine">Porcine</option>    
                                     </select>
-                                    <p class="error">Please select an option</p>
                             </div>
-                    </div>
-                                <div class="form-group" id="sex">
-                                    <label><h3>Sex</h3></label>
-                                        <div class="form-check" >
-                                            <input type="radio" name="one" class="form-check-input" value="" id="gender">
-                                            <label for="male">Male</label>
-                                            <br>
-                                            <input type="radio" name="one" class="form-check-input" value="" id="gender">
-                                            <label for="male">Female</label>
-                                        </div>
-                                </div>
-                                    <div class="form-group" id="">
-                                        <div class="history">
-                                            <label><textarea id="no" class="form-control" name="breed" value="breed" placeholder="Enter the breed..."></textarea><h2>Breed</h2></label>
-                                            <label><textarea id="no" class="form-control" name="age" value="age" placeholder="Enter the Age..."></textarea><h2>Age</h2></label>
-                                            <label><textarea id="no" class="form-control" name="number" value="number" placeholder="Enter herd number..."></textarea><h2>Herd No.</h2></label>
-                                            <label><textarea id="no" class="form-control" name="sick" value="sick" placeholder="Enter number sick..."></textarea><h2>No. Sick</h2></label>
-                                            <label><textarea id="no" class="form-control" name="dead" value="dead" placeholder="Enter number dead..."></textarea><h2>No.dead in 2 weeks</h2></label>
-                                            <label><textarea id="no" class="form-control" name="location" value="location" placeholder="Enter location..."></textarea><h2>Enter location</h2></label>
-                                        </div>
-                                    </div>
-                                        <div class="form-group" id="notes">
-                                            <label><textarea id="symptoms" class="form-control" name="symptoms" placeholder="Enter clinical signs..."></textarea><h3>Tell us clinical signs and upload photos or videos</h3></label>
-                                        </div>
-                                            <button type="button" class="btn btn-block btn-sm btn-success mt-3" id="submitForm"><h2>Submit</h2></button>
-                                    
-                </div>
-                <div class="col-md-6">
-                    <div class="footer">
-                        <div class="prescription" id="tentiveDiagnosis">
-                            <h3>This is the history of the sick animal and tentative diagnosis/treatment</h3>
-                            <ul></ul>
-                                <div class="treatment container">
-                                    <h3 id="treatment"></h3>
+                    	</div>
+                        <div class="form-group" id="sex">
+                            <label><h3>Sex</h3></label>
+                                <div class="form-check" >
+                                    <input type="radio" name="one" class="form-check-input" value="" id="gender">
+                                    <label for="male">Male</label>
+                                    <br>
+                                    <input type="radio" name="one" class="form-check-input" value="" id="gender">
+                                    <label for="male">Female</label>
                                 </div>
                         </div>
                     </form>
-                    </div>
                 </div>
             </div>
+        </div>
+        <div class="container-fluid" id="history">
+        	<h2><strong>History</strong></h2>
+        		<form>
+                    <div class="form-group" id="">
+                        <div class="history">
+                            <label><h3>Breed:</h3><textarea id="no" class="form-control" name="breed" value="breed" placeholder="Enter the breed..."></textarea></label>
+                            <label><h3>Age:</h3><textarea id="no" class="form-control" name="age" value="age" placeholder="Enter the Age..."></textarea></label>
+                            <label><h3>Herd No.:</h3><textarea id="no" class="form-control" name="number" value="number" placeholder="Enter herd number..."></textarea></label>
+                            <label><h3>No. Sick:</h3><textarea id="no" class="form-control" name="sick" value="sick" placeholder="Enter number sick..."></textarea></label>
+                            <label><h3>No.dead in 2 weeks:</h3><textarea id="no" class="form-control" name="dead" value="dead" placeholder="Enter number dead..."></textarea></label>
+                            <label><h3>Enter location:</h3><textarea id="no" class="form-control" name="location" value="location" placeholder="Enter location..."></textarea></label>
+                           	<label><h3>Tell us clinical signs and upload photos or videos</h3><textarea id="symptoms" class="form-control" name="symptoms" placeholder="Enter clinical signs..."></textarea></label><br>
+                           	<label for="video">Select video:</label>
+  							<input type="file" id="video" name="video" accept="video/*">
+  							<input type="submit">
+                        </div> 
+                    </div>
+                    <button type="button" class="btn btn-danger mt-3" id="submitForm"><h2>Submit</h2></button>
+                </form>
+        </div>
+
+        <div class="container-fluid" id="summary">        
+            <div class="prescription" id="tentiveDiagnosis">
+                <h3>This is the history of the sick animal and tentative diagnosis/treatment</h3>
+                <ul></ul>
+                <div class="treatment container">
+                    <h3 id="treatment"></h3>
+                </div>
+            </div>
+        </div>
        	</div>
     </body>
     <script src="jx/jquery-3.5.1.min.js"></script>
