@@ -1,12 +1,10 @@
     /* body
 =============================*/
 #landingPage{
-	display: flex;
-    flex-direction: column;
-    align-items: center;
-	background-image: url(../img/shamba2.jpg);
+	background-image: url(../img/shamba3.jpg);
 	background-repeat: no-repeat;
 	background: cover;
+  height: 97vh;
 
 }
 #selectShamba {
@@ -16,7 +14,6 @@
 }
 
 body {
-    background: linear-gradient(rgb(168, 163, 163) 0%, #222 100%);
     height: 100vh;
     color: white;
 }
