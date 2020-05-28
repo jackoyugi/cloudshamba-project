@@ -38,6 +38,20 @@ $(document).ready(function() {
         $('#dead').append("<li>" + inputtedDead + "</li>");
         $('#location').append("<li>" + inputtedLocation + "</li>");
 
+    
+
+    });
+
+});
+$(document).ready(function() {
+    $("#selectShamba").click(function(event) {
+        event.preventDefault();
+        $("#select, #sex, #history, #button").fadeIn();
+        $("#selectShamba").hide();
+        $("button#submitForm").click(function() {
+
+        });
+
     });
 
 });

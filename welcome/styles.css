@@ -92,6 +92,6 @@ body {
 	  color: black;
   }
 
-  #select, {
+  #select, #sex, #history, button, #summary {
 	  display: none;
   }
