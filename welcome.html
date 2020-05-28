@@ -63,12 +63,12 @@
         		<form>
                     <div class="form-group" id="">
                         <div class="history">
-                            <label><h3>Breed:</h3><textarea id="breed" class="form-control" name="breed" value="breed" placeholder="Enter the breed..." required></textarea></label>
-                            <label><h3>Age:</h3><textarea id="age" class="form-control" name="age" value="age" placeholder="Enter the Age..." required></textarea></label>
-                            <label><h3>Herd No.:</h3><textarea id="number" class="form-control" name="number" value="number" placeholder="Enter herd number..." required></textarea></label>
-                            <label><h3>No. Sick:</h3><textarea id="sick" class="form-control" name="sick" value="sick" placeholder="Enter number sick..." required></textarea></label>
-                            <label><h3>No.dead in 2 weeks:</h3><textarea id="dead" class="form-control" name="dead" value="dead" placeholder="Enter number dead..." required></textarea></label>
-                            <label><h3>Enter location:</h3><textarea id="location" class="form-control" name="location" value="location" placeholder="Enter location..." required></textarea></label>
+                            <label><h3>Breed:</h3><textarea id="breed" class="form-control" name="breed" placeholder="Enter the breed..." required></textarea></label>
+                            <label><h3>Age:</h3><textarea id="age" class="form-control" name="age" placeholder="Enter the Age..." required></textarea></label>
+                            <label><h3>Herd No.:</h3><textarea id="number" class="form-control" name="number" placeholder="Enter herd number..." required></textarea></label>
+                            <label><h3>No. Sick:</h3><textarea id="sick" class="form-control" name="sick" placeholder="Enter number sick..." required></textarea></label>
+                            <label><h3>No.dead in 2 weeks:</h3><textarea id="dead" class="form-control" name="dead" placeholder="Enter number dead..." required></textarea></label>
+                            <label><h3>Enter location:</h3><textarea id="location" class="form-control" name="location" placeholder="Enter location..." required></textarea></label>
                            	<label><h3>Tell us clinical signs and upload photos or videos</h3><textarea id="symptoms" class="form-control" name="symptoms" placeholder="Enter clinical signs..." required></textarea></label><br>
                         </div> 
                     </div>
@@ -79,14 +79,32 @@
         <div class="container-fluid" id="summary">        
             <div class="prescription" id="tentiveDiagnosis">
                 <h3>This is the history of the sick animal and tentative diagnosis/treatment</h3>
-                <ul>
-                	Breed: <li id="breed"></li>
-                	Age: <li id="age"></li>
-                	Herd No.: <li id="number"></li>
-                	No. Sick: <li id="sick"></li>
-                	No. Dead: <li id="dead"></li>
-                	Location: <li id="location"></li>
-                </ul>
+                <table class="table">
+                	<tr>
+                		<td>Breed:</td>
+                		<td id="breedV"></td>
+                	</tr>
+                	<tr>
+                		<td>Age:</td>
+                		<td id="ageV"></td>
+                	</tr>
+                	<tr>
+                		<td>Herd No.:</td>
+                		<td id="numberV"></td>
+                	</tr>
+                	<tr>
+                		<td>No. Sick:</td>
+                		<td id="sickV"></td>
+                	</tr>
+                	<tr>
+                		<td>No. Dead:</td>
+                		<td id="deadV"></td>
+                	</tr>
+                	<tr>
+                		<td>Location:</td>
+                		<td id="locationV"></td>
+                	</tr>
+                </table>
                 <form>
                 	<label for="video">Select video:</label>
   					<input type="file" id="video" name="video" accept="video/*">
