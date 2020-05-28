@@ -57,6 +57,10 @@ padding-bottom: 50px;
   text-align: center;
 }
 
+.table {
+  color: white;
+}
+
 body {
     height: 100vh;
     color: white;

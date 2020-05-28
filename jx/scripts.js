@@ -46,12 +46,14 @@ $(document).ready(function() {
         $('#sickV').append("<td>" + inputtedSick + "</td>");
         $('#deadV').append("<td>" + inputtedDead + "</td>");
         $('#locationV').append("<td>" + inputtedLocation + "</td>");
+
+        alert("Your Diagnosis Has been Received, A possible solution will be given to you. Otherwise, a vet will contact you shortly");
     });
 
 });
 
 $(document).ready(function() {
-    $("#upload").submit(function(event) {
+    $("#upload").click(function(event) {
         alert("Your file has been received");
     });
 });
