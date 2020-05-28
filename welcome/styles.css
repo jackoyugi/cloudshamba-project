@@ -45,7 +45,7 @@ body {
     color: rgb(241, 234, 234);
 	font-size: 20px;
   }
-  .section {
+  .history {
 	  color: white;
 	  width: 50%
 	  
@@ -63,4 +63,7 @@ body {
   }
   #sex {
 	  font-size: large;
+  }
+  #selectShamba, #select, #sex, .footer, .history, #notes, #submitForm, {
+	  display: none;
   }
