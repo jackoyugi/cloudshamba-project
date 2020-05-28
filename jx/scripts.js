@@ -22,14 +22,22 @@ History.prototype.selected = function() {
 }
 //userInterface
 $(document).ready(function() {
-    $("#selectShamba").click(function(event) {
+    $("#submitForm").submit(function(event) {
         event.preventDefault();
-        $("#select").fadeIn();
-        $("#selectShamba").hide();
-        $("button#submitForm").click(function() {
+        var inputtedBreed = document.getElementById('breed');
+        var inputtedAge = document.getElementById('age');
+        var inputtedNumber = document.getElementById('number');
+        var inputtedSick = document.getElementById('sick');
+        var inputtedDead = document.getElementById('dead');
+        var inputtedLocation = document.getElementById('location');
 
-        });
-    
+        $('#breed').append("<li>" + inputtedBreed + "</li>");
+        $('#age').append("<li>" + inputtedAge + "</li>");
+        $('#number').append("<li>" + inputtedNumber + "</li>");
+        $('#sick').append("<li>" + inputtedSick + "</li>");
+        $('#dead').append("<li>" + inputtedDead + "</li>");
+        $('#location').append("<li>" + inputtedLocation + "</li>");
+
     });
 
 });
