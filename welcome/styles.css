@@ -4,10 +4,9 @@
 	display: flex;
     flex-direction: column;
     align-items: center;
-	background-image: url(../img/shamba.jpg);
+	background-image: url(../img/shamba2.jpg);
 	background-repeat: no-repeat;
 	background: cover;
-	padding: 25% 25% 25% 25%
 
 }
 #selectShamba {
@@ -31,9 +30,6 @@ body {
 .form-control {
     background-color:transparent;
     color: rgb(134, 127, 127);
-    border: 3px solid #555;
-	height: 60px !important;
-	width: 200%;
   }
     /* Error Styles
 =============================*/
@@ -41,16 +37,11 @@ body {
   .error-border {
 	border-color: rgb(85, 43, 43);
   }
-  .error {
-    color: rgb(241, 234, 234);
-	font-size: 20px;
-  }
+
   .history {
-	  color: white;
-	  width: 50%
-	  
-	  
+	  color: white; 
   }
+
   #no {
 	  color: rgb(5, 4, 4);
 	  font-size: xx-large;
