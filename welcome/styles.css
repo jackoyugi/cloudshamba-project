@@ -7,6 +7,25 @@
   color: black;
 }
 
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav-right {
+  float: right;
+}
+
+
 .form-group {
   margin-right: 40px;
 }
@@ -30,8 +49,12 @@ padding-bottom: 50px;
 }
 
 #selectShamba {
-	position:relative;
+	padding-top: 70px;
+  text-align: center;
+}
 
+#select #sex {
+  text-align: center;
 }
 
 body {
@@ -48,6 +71,7 @@ body {
 .form-control {
     background-color:transparent;
     color: rgb(134, 127, 127);
+    border: solid black;
   }
     /* Error Styles
 =============================*/
