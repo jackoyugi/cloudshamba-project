@@ -16,7 +16,8 @@
                 <div class="col-md-6"> 
                     <form id="">
                     	<div class="form-group" id="selectShamba">
-                        <h1><label>Welcome</label></h1>
+                        <h1>Welcome</h1>
+                        <label><h3>How would you like us to assist you?:</h3></label>
                             <select class="form-control" id="welcome" required>
                                 <option value="select"></option>
                                 <option value="diagnosis">Diagnosis</option>
@@ -50,22 +51,21 @@
 
         <div class="container-fluid" id="history">
         	<h2><strong>History</strong></h2>
-                        <div class="form-group" id="">
-                            <div class="history">
-                                <label><h3>Breed:</h3><textarea id="no" class="form-control" name="breed" value="breed" placeholder="Enter the breed..."></textarea></label>
-                                <label><h3>Age:</h3><textarea id="no" class="form-control" name="age" value="age" placeholder="Enter the Age..."></textarea></label>
-                                <label><h3>Herd No.:</h3><textarea id="no" class="form-control" name="number" value="number" placeholder="Enter herd number..."></textarea></label>
-                                <label><h3>No. Sick:</h3><textarea id="no" class="form-control" name="sick" value="sick" placeholder="Enter number sick..."></textarea></label>
-                                <label><h3>No.dead in 2 weeks:</h3><textarea id="no" class="form-control" name="dead" value="dead" placeholder="Enter number dead..."></textarea></label>
-                                <label><h3>Enter location:</h3><textarea id="no" class="form-control" name="location" value="location" placeholder="Enter location..."></textarea></label>
-                            </div>
-                        </div>
-                        <div class="form-group" id="notes">
-                            <label><textarea id="symptoms" class="form-control" name="symptoms" placeholder="Enter clinical signs..."></textarea><h3>Tell us clinical signs and upload photos or videos</h3></label>
-                        </div>
-                        <button type="button" class="btn btn-block btn-sm btn-success mt-3" id="submitForm"><h2>Submit</h2></button>
-                    </form>            
-                </div>
+        		<form>
+                    <div class="form-group" id="">
+                        <div class="history">
+                            <label><h3>Breed:</h3><textarea id="no" class="form-control" name="breed" value="breed" placeholder="Enter the breed..."></textarea></label>
+                            <label><h3>Age:</h3><textarea id="no" class="form-control" name="age" value="age" placeholder="Enter the Age..."></textarea></label>
+                            <label><h3>Herd No.:</h3><textarea id="no" class="form-control" name="number" value="number" placeholder="Enter herd number..."></textarea></label>
+                            <label><h3>No. Sick:</h3><textarea id="no" class="form-control" name="sick" value="sick" placeholder="Enter number sick..."></textarea></label>
+                            <label><h3>No.dead in 2 weeks:</h3><textarea id="no" class="form-control" name="dead" value="dead" placeholder="Enter number dead..."></textarea></label>
+                            <label><h3>Enter location:</h3><textarea id="no" class="form-control" name="location" value="location" placeholder="Enter location..."></textarea></label>
+                           	<label><h3>Tell us clinical signs and upload photos or videos</h3><textarea id="symptoms" class="form-control" name="symptoms" placeholder="Enter clinical signs..."></textarea></label>
+                        </div> 
+                    </div>
+                    <button type="button" class="btn btn-sm btn-danger mt-3" id="submitForm"><h2>Submit</h2></button>
+                </form>
+        </div>        
                 <div class="col-md-6">
                     <div class="footer">
                         <div class="prescription" id="tentiveDiagnosis">

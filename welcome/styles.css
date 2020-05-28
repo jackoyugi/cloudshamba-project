@@ -7,10 +7,15 @@
   color: black;
 }
 
+.form-group {
+  margin-right: 40px;
+}
+
 #history {
 background-color: green;
 padding-top: 50px;
 padding-left: 50px;
+padding-bottom: 50px;
 }
 
 #history h2 {
@@ -18,7 +23,6 @@ padding-left: 50px;
 }
 
 #selectShamba {
-	color: rgb(240, 233, 230);
 	position:relative;
 
 }
@@ -51,16 +55,12 @@ body {
 
   #no {
 	  color: rgb(5, 4, 4);
-	  font-size: xx-large;
 
   }
   #symptoms {
-	  width: 300%;
 	  color: black;
-	  font-size: xx-large;
   }
-  #sex {
-	  font-size: large;
+
   }
   #selectShamba, #select, #sex, .footer, .history, #notes, #submitForm, {
 	  display: none;
