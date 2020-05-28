@@ -4,9 +4,19 @@
 	background-image: url(../img/shamba3.jpg);
 	background-repeat: no-repeat;
 	background: cover;
-  height: 97vh;
-
+  color: black;
 }
+
+#history {
+background-color: green;
+padding-top: 50px;
+padding-left: 50px;
+}
+
+#history h2 {
+  text-align: center;
+}
+
 #selectShamba {
 	color: rgb(240, 233, 230);
 	position:relative;
