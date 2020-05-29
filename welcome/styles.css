@@ -76,9 +76,10 @@ body {
     /* Error Styles
 =============================*/
   
-  .error-border {
-	border-color: rgb(85, 43, 43);
+  .error {
+	color: #910b0b;
   }
+  
 
   .history {
 	  color: white; 
@@ -92,6 +93,6 @@ body {
 	  color: black;
   }
 
-  #select, #sex, #history, button, #summary {
+  #select, #sex, #history, button, #summary, .error {
 	  display: none;
   }

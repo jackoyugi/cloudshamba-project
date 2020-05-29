@@ -48,6 +48,11 @@ $(document).ready(function() {
         event.preventDefault();
         $("#select, #sex, #history, #button").fadeIn();
         $("#selectShamba").hide();
+        var diagnosis = $("#selectshamba option:selected").text();
+        var select = $("#select option:selected").text();
+        if (diagnosis === 0) {
+            $(".error").show();
+        };
         $("button#submitForm").click(function() {
 
         });
