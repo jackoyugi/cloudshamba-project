@@ -18,7 +18,8 @@
 			</a>
 			<div class="topnav-right">
 				<a href="#landingPage"><strong>HOME</strong></a>
-				<a href="#products"><strong>ABOUT US</strong></a>
+				<a href="#about"><strong>ABOUT US</strong></a>
+				<a href="contact.html"><strong>CONTACT US</strong></a>
 			</div>
             <div class="row">
                 <div class="col"> 
@@ -62,28 +63,55 @@
         <div class="container-fluid" id="history">
         	<h2><strong>History</strong></h2>
         		<form>
-                    <div class="form-group" id="">
+                    <div class="form-group">
                         <div class="history">
-                            <label><h3>Breed:</h3><textarea id="breed" class="form-control" name="breed" value="breed" placeholder="Enter the breed..."></textarea></label>
-                            <label><h3>Age:</h3><textarea id="age" class="form-control" name="age" value="age" placeholder="Enter the Age..."></textarea></label>
-                            <label><h3>Herd No.:</h3><textarea id="number" class="form-control" name="number" value="number" placeholder="Enter herd number..."></textarea></label>
-                            <label><h3>No. Sick:</h3><textarea id="sick" class="form-control" name="sick" value="sick" placeholder="Enter number sick..."></textarea></label>
-                            <label><h3>No.dead in 2 weeks:</h3><textarea id="dead" class="form-control" name="dead" value="dead" placeholder="Enter number dead..."></textarea></label>
-                            <label><h3>Enter location:</h3><textarea id="location" class="form-control" name="location" value="location" placeholder="Enter location..."></textarea></label>
-                           	<label><h3>Tell us clinical signs and upload photos or videos</h3><textarea id="symptoms" class="form-control" name="symptoms" placeholder="Enter clinical signs..."></textarea></label><br>
-                           	<label for="video">Select video:</label>
-  							<input type="file" id="video" name="video" accept="video/*">
-  							<input type="submit">
+                            <label><h3>Breed:</h3><textarea id="breed" class="form-control" name="breed" placeholder="Enter the breed..." required></textarea></label>
+                            <label><h3>Age:</h3><textarea id="age" class="form-control" name="age" placeholder="Enter the Age..." required></textarea></label>
+                            <label><h3>Herd No.:</h3><textarea id="number" class="form-control" name="number" placeholder="Enter herd number..." required></textarea></label>
+                            <label><h3>No. Sick:</h3><textarea id="sick" class="form-control" name="sick" placeholder="Enter number sick..." required></textarea></label>
+                            <label><h3>No.dead in 2 weeks:</h3><textarea id="dead" class="form-control" name="dead" placeholder="Enter number dead..." required></textarea></label>
+                            <label><h3>Enter location:</h3><textarea id="location" class="form-control" name="location" placeholder="Enter location..." required></textarea></label>
+                           	<label><h3>Tell us clinical signs and upload photos or videos</h3><textarea id="symptoms" class="form-control" name="symptoms" placeholder="Enter clinical signs..." required></textarea></label><br>
                         </div> 
                     </div>
-                    <button type="button" class="btn btn-danger mt-3" id="submitForm"><h2>Submit</h2></button>
+                    <button type="submit" class="btn btn-danger mt-3" id="submitForm"><h2>Submit</h2></button>
                 </form>
         </div>
 
         <div class="container-fluid" id="summary">        
             <div class="prescription" id="tentiveDiagnosis">
                 <h3>This is the history of the sick animal and tentative diagnosis/treatment</h3>
-                <ul></ul>
+                <table class="table">
+                	<tr>
+                		<td>Breed:</td>
+                		<td id="breedV"></td>
+                	</tr>
+                	<tr>
+                		<td>Age:</td>
+                		<td id="ageV"></td>
+                	</tr>
+                	<tr>
+                		<td>Herd No.:</td>
+                		<td id="numberV"></td>
+                	</tr>
+                	<tr>
+                		<td>No. Sick:</td>
+                		<td id="sickV"></td>
+                	</tr>
+                	<tr>
+                		<td>No. Dead:</td>
+                		<td id="deadV"></td>
+                	</tr>
+                	<tr>
+                		<td>Location:</td>
+                		<td id="locationV"></td>
+                	</tr>
+                </table>
+                <form>
+                	<label for="video">Select video:</label>
+  					<input type="file" id="video" name="video" accept="video/*">
+  					<input type="submit" id="upload">
+                </form>
                 <div class="treatment container">
                     <h3 id="treatment"></h3>
                 </div>
