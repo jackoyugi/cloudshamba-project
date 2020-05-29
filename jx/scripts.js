@@ -20,25 +20,40 @@ Diagnosis.prototype.selected = function() {
 History.prototype.selected = function() {
     return this.breed + " " + this.location;
 }
+
+
 //userInterface
 $(document).ready(function() {
-    $("#submitForm").submit(function(event) {
+    $("#submitForm").click(function(event) {
         event.preventDefault();
-        var inputtedBreed = document.getElementById('breed');
-        var inputtedAge = document.getElementById('age');
-        var inputtedNumber = document.getElementById('number');
-        var inputtedSick = document.getElementById('sick');
-        var inputtedDead = document.getElementById('dead');
-        var inputtedLocation = document.getElementById('location');
 
-        $('#breed').append("<li>" + inputtedBreed + "</li>");
-        $('#age').append("<li>" + inputtedAge + "</li>");
-        $('#number').append("<li>" + inputtedNumber + "</li>");
-        $('#sick').append("<li>" + inputtedSick + "</li>");
-        $('#dead').append("<li>" + inputtedDead + "</li>");
-        $('#location').append("<li>" + inputtedLocation + "</li>");
+        var inputtedBreed = $("textarea#breed").val();
+        console.log(inputtedBreed);
+        var inputtedAge = $("textarea#age").val();
+        console.log(inputtedAge);
+        var inputtedNumber = $("textarea#number").val();
+        console.log(inputtedNumber);
+        var inputtedSick = $("textarea#sick").val();
+        console.log(inputtedSick);
+        var inputtedDead = $("textarea#dead").val();
+        console.log(inputtedDead);
+        var inputtedLocation = $("textarea#location").val();
+        console.log(inputtedLocation);
 
+        $('#breedV').append("<td>" + inputtedBreed + "</td>");
+        $('#ageV').append("<td>" + inputtedAge + "</td>");
+        $('#numberV').append("<td>" + inputtedNumber + "</td>");
+        $('#sickV').append("<td>" + inputtedSick + "</td>");
+        $('#deadV').append("<td>" + inputtedDead + "</td>");
+        $('#locationV').append("<td>" + inputtedLocation + "</td>");
+
+        alert("Your Diagnosis Has been Received, A possible solution will be given to you. Otherwise, a vet will contact you shortly");
     });
 
 });
 
+$(document).ready(function() {
+    $("#upload").click(function(event) {
+        alert("Your file has been received");
+    });
+});
