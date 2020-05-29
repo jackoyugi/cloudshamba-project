@@ -51,7 +51,22 @@ $(document).ready(function() {
 
 });
 
-   alert("Your Diagnosis Has been Received, A possible solution will be given to you. Otherwise, a vet will contact you shortly");
+$(document).ready(function() {
+    $("#selectShamba").click(function(event) {
+        event.preventDefault();
+        $("#select, #sex, #history, #button, #summary").fadeIn();
+        $("#selectShamba").hide();
+        var diagnosis = $("#selectshamba option:selected").text();
+        var select = $("#select option:selected").text();
+        if (diagnosis === 0) {
+            $(".error").show();
+        };
+        $("button#submitForm").click(function() {
+
+        });
+    });
+
+});
   
 
 $(document).ready(function() {
@@ -59,3 +74,6 @@ $(document).ready(function() {
         alert("Your file has been received");
     });
 });
+
+alert("Your Request Has been Received, A possible diagnosis and treatment will be given to you. Otherwise, a vet will contact you shortly");
+
